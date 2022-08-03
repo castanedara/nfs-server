@@ -65,6 +65,7 @@
 
 #11 Configurar NFS SERVER
 	echo "/mnt/app *(rw)" >> /etc/exports
+        echo "/nfs-dir/elk/snapshots *(rw,sync,no_root_squash)" >> /etc/exports
 	exportfs -vr
 
 #12 Reiniciar NFS.
