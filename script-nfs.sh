@@ -24,7 +24,7 @@
 	firewall-cmd --permanent --add-service=mountd
 	firewall-cmd --permanent --add-service=rpc-bind
 	firewall-cmd --permanent --add-service=nfs
-	firewall-cmd –reload
+	firewall-cmd --reload
 
 #7 Revisar disco adicional para el almacenamiento, si no existe solicitarlo
 	fdisk -l
